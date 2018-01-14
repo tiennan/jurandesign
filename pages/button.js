@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
-export default class Button extends React.Component {
+import {Button} from '../hswui';
+
+export default class PageButton extends React.Component {
     static propTypes = {
         pageKey: PropTypes.string,
     }
@@ -15,7 +17,16 @@ export default class Button extends React.Component {
                 <h1>Button 按钮</h1>
                 <p>常用的操作按钮。</p>
                 <h2>用法</h2>
-                <button className="btn">按钮样式</button>
+                <Button type="primary">关键操作</Button>&nbsp;&nbsp;
+                <Button>辅助操作</Button>&nbsp;&nbsp;
+                <pre>
+                    <code>
+                        {`
+<Button type="primary">关键操作</Button>
+<Button>辅助操作</Button>
+                        `}
+                    </code>
+                </pre>
             </div>
         );
     }
