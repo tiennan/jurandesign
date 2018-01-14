@@ -5,12 +5,6 @@ import PropTypes from 'prop-types';
 import {Button} from '../hswui';
 
 export default class PageButton extends React.Component {
-    static propTypes = {
-        pageKey: PropTypes.string,
-    }
-    static defaultProps = {
-        pageKey: '',
-    }
     render() {
         return (
             <div>

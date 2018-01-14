@@ -3,12 +3,6 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
 export default class Intro extends React.Component {
-    static propTypes = {
-        pageKey: PropTypes.string,
-    }
-    static defaultProps = {
-        pageKey: '',
-    }
     render() {
         return (
             <div>

@@ -13,7 +13,7 @@ export default class Button extends React.Component {
         let className = `hsw-btn hsw-${this.props.type}`;
         
         return (
-            <button className={className}>{this.props.children}</button>
+            <button className={className} onClick={this.props.onClick}>{this.props.children}</button>
         );
     }
 }

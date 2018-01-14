@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import PageButton from './pages/button.js';
 import PageIntro from './pages/intro.js';
 import PageDesign from './pages/design.js';
+import PageLiveHint from './pages/livehint.js';
 
 export default class Container extends React.Component {
     static propTypes = {
@@ -18,6 +19,7 @@ export default class Container extends React.Component {
             case 'button': return <PageButton />;
             case 'intro': return <PageIntro />;
             case 'design': return <PageDesign />;
+            case 'livehint': return <PageLiveHint />;
             default: return <PageIntro/>;
         }
     }
