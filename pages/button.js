@@ -10,6 +10,13 @@ export default class Button extends React.Component {
         pageKey: '',
     }
     render() {
-        return <div>hello world Button</div>
+        return (
+            <div>
+                <h1>Button 按钮</h1>
+                <p>常用的操作按钮。</p>
+                <h2>用法</h2>
+                
+            </div>
+        );
     }
 }
