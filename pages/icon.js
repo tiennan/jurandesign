@@ -24,7 +24,7 @@ export default class Icon extends React.Component {
                   <li className="" onClick={this.showCode.bind(this, "yonghu")}><div className="yonghu"></div><span className="anticon-class"><span className="ant-badge">yonghu</span></span></li>
                   <li className="" onClick={this.showCode.bind(this, "zuijinshiyong")}><div className="zuijinshiyong"></div><span className="anticon-class"><span className="ant-badge">zuijinshiyong</span></span></li>
                 </ul>
-                <h3>2.功能工具图标</h3>
+                {/* <h3>2.功能工具图标</h3>
                 <ul className="anticons-list clearfix icons">
                   <li className=""><i className="anticon anticon-step-backward"></i><span className="anticon-class"><span className="ant-badge">step-backward</span></span></li>
                   <li className=""><i className="anticon anticon-step-forward"></i><span className="anticon-class"><span className="ant-badge">step-forward</span></span></li>
@@ -47,7 +47,7 @@ export default class Icon extends React.Component {
                   <li className=""><i className="anticon anticon-fast-backward"></i><span className="anticon-class"><span className="ant-badge">fast-backward</span></span></li>
                   <li className=""><i className="anticon anticon-fast-forward"></i><span className="anticon-class"><span className="ant-badge">fast-forward</span></span></li>
                   <li className=""><i className="anticon anticon-shrink"></i><span className="anticon-class"><span className="ant-badge">shrink</span></span></li>
-                </ul>
+                </ul> */}
             </div>
         );
     }
