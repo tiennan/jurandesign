@@ -23,8 +23,8 @@ export default class Sider extends React.Component {
                 <SubMenu key="sub1" title={<span><Icon type="bulb" /><span>居然设计</span></span>}>
                     <Menu.Item key="intro">介绍</Menu.Item>
                     <Menu.Item key="design">设计价值观</Menu.Item>
-                    <Menu.Item key="1">色彩</Menu.Item>
-                    <Menu.Item key="2">图标</Menu.Item>
+                    <Menu.Item key="color">色彩</Menu.Item>
+                    <Menu.Item key="icon">图标</Menu.Item>
                     <Menu.Item key="3">主要控件及样式</Menu.Item>
                 </SubMenu>
                 <SubMenu key="sub2" title={<span><Icon type="appstore" /><span>基本控件</span></span>}>
