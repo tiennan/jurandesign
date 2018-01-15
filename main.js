@@ -12,9 +12,18 @@ export default class Main extends React.Component {
         this.state = {
             pageKey: 'default',
         };
-        this.onSiderMenuClicked = this.onSiderMenuClicked.bind(this);
+        this._onSiderMenuClicked = this._onSiderMenuClicked.bind(this);
     }
-    onSiderMenuClicked(data) {
+    componentDidMount() {
+        if (location.hash) {
+            const pageKey = location.hash.substring(1);
+            this.setState({
+                pageKey,
+            });
+        }
+    }
+    _onSiderMenuClicked(data) {
+        location.hash = data.key;
         this.setState({
             pageKey: data.key,
         });
@@ -28,7 +37,7 @@ export default class Main extends React.Component {
             </Header>
             <Layout>
                 <Sider width={200} style={{ background: '#fff' }}>
-                    <MyMenu handleClick={this.onSiderMenuClicked} />
+                    <MyMenu handleClick={this._onSiderMenuClicked} />
                 </Sider>
                 <Layout>
                     <Content style={{ background: '#fff', padding: 24, margin: 0, minHeight: 280 }}>
