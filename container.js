@@ -6,6 +6,7 @@ import PageButton from './pages/button.js';
 import PageIntro from './pages/intro.js';
 import PageDesign from './pages/design.js';
 import PageLiveHint from './pages/livehint.js';
+import PageMessageBox from './pages/messagebox.js';
 
 export default class Container extends React.Component {
     static propTypes = {
@@ -20,6 +21,7 @@ export default class Container extends React.Component {
             case 'intro': return <PageIntro />;
             case 'design': return <PageDesign />;
             case 'livehint': return <PageLiveHint />;
+            case 'messagebox': return <PageMessageBox />;
             default: return <PageIntro/>;
         }
     }

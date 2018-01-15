@@ -20,7 +20,7 @@ export default class Sider extends React.Component {
                 defaultOpenKeys={['sub1']}
                 mode="inline"
             >
-                <SubMenu key="sub1" title={<span><Icon type="ant-design" /><span>居然设计家</span></span>}>
+                <SubMenu key="sub1" title={<span><Icon type="bulb" /><span>居然设计</span></span>}>
                     <Menu.Item key="intro">介绍</Menu.Item>
                     <Menu.Item key="design">设计价值观</Menu.Item>
                     <Menu.Item key="1">色彩</Menu.Item>
@@ -35,11 +35,9 @@ export default class Sider extends React.Component {
                         <Menu.Item key="8">Option 8</Menu.Item>
                     </SubMenu>
                 </SubMenu>
-                <SubMenu key="sub4" title={<span><Icon type="setting" /><span>提示控件</span></span>}>
+                <SubMenu key="sub4" title={<span><Icon type="setting" /><span>进阶控件</span></span>}>
                     <Menu.Item key="livehint">LiveHint 消息提示</Menu.Item>
                     <Menu.Item key="messagebox">MessageBox 弹框</Menu.Item>
-                    <Menu.Item key="11">Option 11</Menu.Item>
-                    <Menu.Item key="12">Option 12</Menu.Item>
                 </SubMenu>
             </Menu>
         );

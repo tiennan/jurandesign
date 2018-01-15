@@ -10,7 +10,7 @@ export default class Button extends React.Component {
         type: 'default',
     }
     render() {
-        let className = `hsw-btn hsw-${this.props.type}`;
+        let className = `hsw-btn btn-${this.props.type}`;
         
         return (
             <button className={className} onClick={this.props.onClick}>{this.props.children}</button>
