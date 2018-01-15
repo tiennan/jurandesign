@@ -7,9 +7,10 @@ export default class Design extends React.Component {
         return (
             <div>
                 <h1>设计价值观</h1>
-                <img style={{height: 250}} src="./res/guide.png" />
-                <br /><br /><br />
+                <br />
                 <p>设计价值观为 Juran Design 的设计者以及基于 Juran Design 进行产品设计的设计者，提供评价设计好坏的内在标准，并提供有效的设计实践所遵循的规则。同时，它启示并激发了设计原则和设计模式，为具体的设计问题提供向导和一般解决方案。</p>
+                <img style={{height: 250}} src="./res/guide.png" />
+                <br /><br />
                 <h2>『确定』</h2>
                 <p>『设计者』需要做出更好的设计决策，给予研发团队一种高确定性、低熵值的研发状态。同时，不同设计者在充分理解业务述求后，基于 Juran Design体系都会有相同且符合当前业务特性的设计产出。</p>
                 <ul>
